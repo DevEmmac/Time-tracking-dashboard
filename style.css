@@ -1,0 +1,332 @@
+* html{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+} 
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 10rem 10rem;
+    gap: 1.5rem;
+    height: 100%;
+    width: 85%;
+    margin-top: 7rem;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.jere {
+    grid-row: 1 / 3;
+    width: 17.5rem;
+    height: 35.3rem;
+    border-radius: 1rem;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.jererob {
+    max-width: 17rem;
+    height: 27rem;
+    padding-left: 2rem;
+    background-color: hsl(228, 45%, 44%);
+    border-radius: 1rem
+   
+ }
+
+.jerepix {
+    width: 6rem;
+    height: 6rem;
+    border: 0.2rem solid white;
+    border-radius: 50%;
+    margin:  2.7rem 0 0 0;
+    
+}
+
+h1{
+    margin-top: -1rem;
+    font-size: 3rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    color: hsl(235, 45%, 61%);
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: system-oboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tex{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.tex button{
+    background-color: transparent;
+    border: transparent;
+    padding-left: 2.5rem;
+    line-height: 2.2rem;
+    font-size: 1.1rem;
+    font-family: system-oboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(235, 45%, 61%);
+
+}
+
+.tracker-option:is(:hover, .active){
+    color: white;
+    cursor: pointer;
+}
+
+.brown, .blue, .red, .violet, .green, .yellow {  
+    width: 17.5rem;
+    height: 16.7rem;
+    border-radius: 1rem;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.blue {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.red {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.violet {
+    background-color: hsl(264, 64%, 52%);
+    margin-top: 7rem;
+}
+
+.green {
+    background-color: hsl(145, 58%, 55%);
+    margin-top: 7rem;
+}
+
+.yellow {
+    background-color: hsl(43, 84%, 65%);
+    margin-top: 7rem;
+}
+
+.work, .play, .study, .exercise, .social, .care {
+    position: relative;
+    max-width: 17.5rem;
+    height: 12.8rem;
+    margin-top: -1.3rem;
+    border-radius: 1rem;
+    padding-left: 1.3rem;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.icon {
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+    padding-left: 11.2rem;
+
+}
+
+h2 {
+    padding-left: 1.2rem;
+
+}
+
+.ellipsis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sv {
+    padding: 2rem 1.3rem 0 0;
+    cursor: pointer;
+    
+}
+
+.time {
+    font-size: 1.5rem;
+    display:block;
+    margin-left: 1.3rem;
+}
+
+.hours {
+    font-size: 2.8rem;
+    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.previous {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.attribution {
+    color: black;
+    position: relative;
+    bottom: -11.3rem;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+      grid-template-rows: 1fr 1fr;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .jererob {
+        max-width: 17rem;
+        height: 8rem;
+        padding-left: 2rem;
+        background-color: hsl(228, 45%, 44%);
+        border-radius: 1rem
+    }
+    
+    .jere {
+        width: 17.5rem;
+        height: 12rem;
+        border-radius: 1rem;
+        background-color: hsl(235, 46%, 20%);
+    }
+
+    .jerepix {
+        width: 4.2rem;
+        height: 4.2rem;
+        margin-left: -0.7rem;
+        margin-top: 1.7rem;
+        border: 0.2rem solid white;
+        border-radius: 50%;
+    }
+
+    h1{
+        margin-left: 4.5rem;
+        font-size: 1.5rem;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+    }
+    
+    p {
+        color: hsl(235, 45%, 61%);
+        margin: -5.5rem 4.7rem 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: system-oboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .tex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .tex button{
+        background-color: transparent;
+        border: transparent;
+        padding: 0.6rem 1rem 0;
+        font-size: 1.1rem;
+        font-family: system-oboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: hsl(235, 45%, 61%);
+    
+    }
+    
+    .tracker-option:is(:hover, .active){
+        color: white;
+        cursor: pointer;
+    }
+    
+    .brown, .blue, .red, .violet, .green, .yellow {  
+        width: 17.5rem;
+        height: 11rem;
+        border-radius: 1rem;
+        background-color: hsl(15, 100%, 70%);
+    }
+    
+    .blue {
+        background-color: hsl(195, 74%, 62%);
+    }
+    
+    .red {
+        background-color: hsl(348, 100%, 68%);
+    }
+    
+    .violet {
+        background-color: hsl(264, 64%, 52%);
+        margin-top: 0.2rem;
+    }
+    
+    .green {
+        background-color: hsl(145, 58%, 55%);
+        margin-top: 0.2rem;
+    }
+    
+    .yellow {
+        background-color: hsl(43, 84%, 65%);
+        margin-top: 0.2rem;
+    }
+    
+    .work, .play, .study, .exercise, .social, .care {
+        position: relative;
+        width: 17.5rem;
+        height: 8rem;
+        margin-top: -2.2rem;
+        border-radius: 1rem;
+        background-color: hsl(235, 46%, 20%);
+    }
+    
+    .icon {
+        z-index: 1;
+        width: 5rem;
+        height: 5rem;
+        padding-left: 11.2rem;
+    
+    }
+    
+    h2 {
+        padding-left: 1.2rem;
+    
+    }
+    
+    .ellipsis {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .sv {
+        padding: 2rem 1.3rem 0 0;
+        
+    }
+
+    .time {
+        font-size: 1.5rem;
+        display:flex;
+        justify-content:space-between;
+    }
+
+    .hours {
+        font-size: 2.3rem;
+        padding-left: 0.6rem;
+        font-family: sans-serif;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .previous {
+        font-size: 1rem;
+        padding-top: 1rem;
+        padding-right: 0.5rem;
+        font-family: 'Rubik', sans-serif;
+}
+
+}
+
+

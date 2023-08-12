@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <title>Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ <div class="container">
+   <div class="jere"> 
+    <div class="jererob">
+     <img class="jerepix" src="images/image-jeremy.png" alt="image">
+      <p>Report for</p>
+       <h1>Jeremy Robson</h1>
+    </div> 
+        <div class="tex">
+          <button class="tracker-option" data-option="daily">Daily</button>
+          <button class="tracker-option" data-option="weekly">Weekly</button>
+          <button class="tracker-option" data-option="monthly">Monthly</button>
+        </div>
+        
+   </div>
+
+    <div class="brown">
+      <img class="icon" src="images/icon-work.svg" alt="work">
+       <div class="work">
+          <div class="ellipsis">
+            <h2>Work</h2>
+             <div>
+               <img class="sv" src="images/icon-ellipsis.svg" alt="svg">
+             </div>
+          </div>
+           <div class="time">
+              <!-- 5hrs daily -->
+              <!-- Previous - 7hrs daily -->
+              <div class="hours">32hrs <!-- weekly --></div>
+              <div class="previous">Lastweek - 36hrs <!-- weekly --></div>
+              <!-- 103hrs monthly -->
+              <!-- Previous - 128hrs monthly -->
+           </div>    
+       </div>
+   </div>
+
+    <div class="blue">
+      <img class="icon" src="images/icon-play.svg" alt="play">
+       <div class="play">
+         <div class="ellipsis">
+           <h2>Play</h2>
+           <div>
+             <img class="sv" src="images/icon-ellipsis.svg" alt="svg">
+           </div>
+         </div>
+
+         <div class="time">
+            <!-- 1hr daily -->
+            <!-- Previous - 2hrs daily -->
+            <div class="hours">10hrs <!-- weekly --></div>
+            <div class="previous">Lastweek - 8hrs <!-- weekly --></div>
+            <!-- 23hrs monthly -->
+            <!-- Previous - 29hrs monthly -->
+         </div>
+
+       </div>
+   </div>
+
+   <div class="red">
+     <img class="icon" src="images/icon-study.svg" alt="study">
+       <div class="study">
+         <div class="ellipsis">
+           <h2>Study</h2>
+            <div>
+              <img class="sv" src="images/icon-ellipsis.svg" alt="svg">
+            </div>
+         </div>
+          
+          <div class="time">
+            <!-- 0hrs daily -->
+            <!-- Previous - 1hr daily -->
+            <div class="hours">4hrs <!-- weekly --></div>
+            <div class="previous"> Lastweek - 7hrs <!-- weekly --></div>
+            <!-- 13hrs monthly -->
+            <!-- Previous - 19hrs monthly -->
+          </div>
+
+     </div>
+   </div>
+
+   <div class="green">
+     <img class="icon" src="images/icon-exercise.svg" alt="exercise">
+       <div class="exercise">
+          <div class="ellipsis">
+           <h2>Exercise</h2>
+           <div>
+             <img class="sv" src="images/icon-ellipsis.svg" alt="svg">
+           </div>
+          </div>
+
+          <div class="time">
+            <!-- 1hr daily -->
+            <!-- Previous - 1hr daily -->
+            <div class="hours">4hrs <!-- weekly --></div>
+            <div class="previous"> Lastweek - 5hrs <!-- weekly --></div>
+            <!-- 11hrs monthly -->
+            <!-- Previous - 18hrs monthly -->
+          </div>
+
+       </div>
+   </div>
+
+   <div class="violet">
+     <img class="icon" src="images/icon-social.svg" alt="socail">
+       <div class="social">
+         <div class="ellipsis">
+           <h2>Social</h2>
+           <div>
+            <img class="sv" src="images/icon-ellipsis.svg" alt="svg">
+          </div>
+         </div>
+
+         <div class="time">
+            <!-- 1hr daily -->
+            <!-- Previous - 3hrs daily -->
+            <div class="hours">5hrs <!-- weekly --></div>
+            <div class="previous"> Lastweek - 10hrs <!-- weekly --></div>
+            <!-- 21hrs monthly -->
+            <!-- Previous - 23hrs monthly -->
+         </div>
+
+       </div>
+   </div>
+
+   <div class="yellow">
+     <img class="icon" src="images/icon-self-care.svg" alt="icon-self-care">
+       <div class="care">
+         <div class="ellipsis">
+           <h2>Self Care</h2>
+           <div>
+            <img class="sv" src="images/icon-ellipsis.svg" alt="svg">
+           </div>
+         </div>
+
+          <div class="time">
+            <!-- 0hrs daily -->
+            <!-- Previous - 1hr daily -->
+            <div class="hours">2hrs <!-- weekly --></div>
+            <div class="previous"> Lastweek - 2hrs <!-- weekly --></div>
+            <!-- 7hrs monthly -->
+            <!-- Previous - 11hrs monthly -->
+          </div>
+
+      </div>
+
+  </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">DevEmman</a>.
+      </div>
+ </div>
+  <script src="script.js"></script>
+</body>
+</html>
