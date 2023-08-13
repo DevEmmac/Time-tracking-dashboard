@@ -129,7 +129,8 @@ let data = [
      // console.log(activity)
      const section = document.createElement('section')
      section.classList.add('activity_tracker', activityClass)
-     const stringToinject = ``
+     const stringToinject = `  
+     `
     }); 
    };
 

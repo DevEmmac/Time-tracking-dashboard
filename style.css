@@ -150,10 +150,11 @@ h2 {
 .sv {
     padding: 2rem 1.3rem 0 0;
     cursor: pointer;
+    fill: white;
     
 }
 
-.time {
+.activity_timeframes {
     font-size: 1.5rem;
     display:block;
     margin-left: 1.3rem;
@@ -165,10 +166,15 @@ h2 {
     font-family: 'Rubik', sans-serif;
 }
 
-.previous {
-    font-size: 0.9rem;
-    padding-top: 1rem;
-    font-family: 'Rubik', sans-serif;
+.previoustime {
+    display: flex;
+}
+
+.previous, .time {
+    margin: 0.1rem 0.1rem;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Rubik', sans-serif
 }
 
 .attribution {
@@ -177,8 +183,7 @@ h2 {
     bottom: -11.3rem;
 }
 
-.attribution a {
-    color: yellow;
+.attribution > a{
     text-decoration: none;
 }
 
@@ -293,6 +298,7 @@ h2 {
         width: 5rem;
         height: 5rem;
         padding-left: 11.2rem;
+      
     
     }
     
@@ -309,13 +315,14 @@ h2 {
     
     .sv {
         padding: 2rem 1.3rem 0 0;
+        fill: white;
         
     }
 
-    .time {
+    .activity_timeframes {
         margin-left: 0.1rem;
         display:flex;
-        justify-content:space-between;
+        /* justify-content:space-between; */
     }
 
     .hours {
@@ -324,11 +331,19 @@ h2 {
         font-family: 'Rubik', sans-serif;
     }
 
-    .previous {
+    .previoustime {
+        display: flex;
+        margin-right: 1rem;
+        width: 15rem;
+        justify-content: right;
+        margin-top: -0.2rem;
+    }
+
+    .previous, .time{
+        margin: 0.1rem 0.1rem;
+        color: white;
         font-size: 0.8rem;
-        padding-top: 1rem;
-        padding-right: 0.8rem;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Rubik', sans-serif
    }
    .attribution {
     color: white;
