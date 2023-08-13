@@ -181,10 +181,11 @@ h2 {
     color: white;
     position: relative;
     bottom: -11.3rem;
+    font-size: 0.6rem;
 }
 
 .attribution > a{
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 @media screen and (max-width: 500px) {
