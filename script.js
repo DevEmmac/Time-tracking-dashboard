@@ -110,13 +110,22 @@ let data = [
     button.classList.add('active')
    }
 
+    const clearActivities = () => {
+    const activities = document.querySelectorAll('.frame-act')
+    activities.forEach(a => a.remove())
+   }
+
    const renderCards = (clickOption) => {
+
+    clearActivities()
+    const container = document.querySelector('div.container')
+
     const calcTimeframe = (option) => {
       if (option ==='daily') {
         return 'Yesterday'
       } else if (option === 'weekly') {
         return 'Last Week'
-      } else if (option === 'montly') {
+      } else if (option === 'monthly') {
         return 'Last Month'
       }
     }
@@ -124,15 +133,39 @@ let data = [
     data.forEach(activity => {
       const name = activity.title;
       const activityClass = name.toLowerCase().replace(' ', '-');
-      const timeframesData = activity.timeframes[clickOption]
+      const timeframeData = activity.timeframes[clickOption]
       const previousTimesframe = calcTimeframe(clickOption)
      // console.log(activity)
-     const section = document.createElement('section')
-     section.classList.add('activity_tracker', activityClass)
-     const stringToinject = `  
+     const div = document.createElement('div')
+     div.classList.add('frame-act', activityClass)
+     const stringToInject = `
+     <img class="icon" src="images/icon-${activityClass}.svg" alt="work">
+    <div class="activity_info"> 
+       <div class="ellipsis">
+          <h2 class="activity_name">${name}</h2>
+           <div class="activity_option">
+             <img class="sv" src="images/icon-ellipsis.svg" alt="svg">
+           </div>
+        </div>
+          <div class="activity_timeframes">
+            <div class="hours">
+              ${timeframeData.current}hrs
+            </div>
+            
+            <div class="previoustime">
+              <p class="previous">${previousTimesframe} - </p>
+              <p class="time">${timeframeData.previous} hrs</p>
+            </div>
+
+          </div>    
+    </div>
      `
+     div.innerHTML =  stringToInject
+     container.append(div)
+
+    //  console.log(section) 
     }); 
-   };
+   }; 
 
    buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -142,3 +175,4 @@ let data = [
     })
    })
    
+   buttons[1].click()
